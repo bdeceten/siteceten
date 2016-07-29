@@ -20,7 +20,13 @@ The framework source code can be found here: [cakephp/cakephp](https://github.co
 
 ## Database Configuration
 
-'host' => 'localhost'
-'username' => 'ceten'
-'password' => 'ceten2016ceten'
-'database' => 'ceten'
+* 'host' => 'localhost'
+* 'username' => 'ceten'
+* 'password' => 'ceten2016ceten'
+* 'database' => 'ceten'
+
+## How to contribute ?
+
+For additional features, add an issue in the github repository (example : "feat/homepage") and create a branch with the same name.
+When your feature is complete, send a pull request from "feat/homepage" to "master".
+[Learn more about this method](https://help.github.com/articles/using-pull-requests/)
