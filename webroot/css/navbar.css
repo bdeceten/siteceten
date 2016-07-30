@@ -67,3 +67,24 @@
     background-color: #dfdfdf;
   }
 }
+
+#nav {
+  background-color: white;
+  color: #6a1361;
+  z-index: 2;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#nav > .navbar-inner {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+}
