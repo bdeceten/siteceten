@@ -1,0 +1,86 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,700';
+
+#nav {
+  background-color: white;
+  color: #6a1361;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+#nav > .navbar-inner {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.landing-screen {
+  width: 100%;
+  height: -moz-calc(100vh - 50px);
+  height: -webkit-calc(100vh - 50px);
+  height: calc(100vh - 50px);
+  color: white;
+  /* IE10+ */
+  background-image: -ms-radial-gradient(center, ellipse farthest-corner, #9A4D94 0%, #6a1361 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-radial-gradient(center, ellipse farthest-corner, #9A4D94 0%, #6a1361 100%);
+  /* Opera */
+  background-image: -o-radial-gradient(center, ellipse farthest-corner, #9A4D94 0%, #6a1361 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, #9A4D94), color-stop(100, #6a1361));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #9A4D94 0%, #6a1361 100%);
+  /* W3C Markup */
+  background-image: radial-gradient(ellipse farthest-corner at center, #9A4D94 0%, #6a1361 100%);
+}
+
+.brand-middle {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 40vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
+}
+
+.btn-style {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+  color: #fff;
+  background: transparent;
+  border: 4px solid #fff;
+}
+
+.btn-style:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-style:active {
+	top: 2px;
+}
+
+.btn-style:hover {
+	background: #fff;
+	color: #444;
+}
