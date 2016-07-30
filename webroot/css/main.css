@@ -48,7 +48,7 @@
 
 .brand-middle {
   text-align: center;
-  margin-top: 40vh; /* poussé de la moitié de hauteur de viewport */
+  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
   transform: translateY(-50%);
 }
 
@@ -92,4 +92,33 @@
 
 .social-network a {
   color: white;
+}
+
+.footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  color: #ccc;
+  background-color: #6a1361;
+  border-style: solid;
+  border-color: #999;
+  border-left: none;
+  border-right: none;
+  border-width: 3px;
+}
+
+.sitemap a {
+  color: #ccc;
+}
+
+#particles {
+  overflow: hidden;
+}
+
+#intro {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  padding: 0 20px;
+  width: 100%;
+  text-align: center;
 }

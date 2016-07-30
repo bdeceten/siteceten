@@ -42,22 +42,24 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
       <?= $this->Html->css('navbar.css') ?>
   </head>
   <body>
-    <div class="landing-screen">
-      <div class="container">
-        <div class="row">
-          <div class="brand-middle">
-              <?= $this->Html->image('logo-white.png', ['class'=>'logo']) ?>
-              <h1> Cercle des Elèves de TELECOM Nancy </h1>
-              <p> <a href="#start"><button class="btn-style">Découvrir</button></a> </p>
-                  <p class="social-network">
-                    <a href="https://www.facebook.com/bde.c.telecomnancy" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="https://twitter.com/bdetelecomnancy" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="https://telecom-nancy.slack.com/" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="https://github.com/bdeceten/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="mailto:bde@telecomnancy.net"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                  </p>
-          </div>
-        </div> <!-- row -->
+    <div id="particles" class="landing-screen">
+      <div id="intro">
+        <div class="container">
+          <div class="row">
+            <div class="brand-middle">
+                <?= $this->Html->image('logo-white.png', ['class'=>'logo']) ?>
+                <h1> Cercle des Elèves de TELECOM Nancy </h1>
+                <p> <a href="#start"><button class="btn-style">Découvrir</button></a> </p>
+                    <p class="social-network">
+                      <a href="https://www.facebook.com/bde.c.telecomnancy" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="https://twitter.com/bdetelecomnancy" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="https://telecom-nancy.slack.com/" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="https://github.com/bdeceten/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="mailto:bde@telecomnancy.net"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    </p>
+            </div>
+          </div> <!-- row -->
+        </div>
       </div>
     </div>
     <div id="start">
@@ -110,11 +112,47 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
         </div>
     </div>
-
+    <footer class="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-2 col-md-offset-3">
+            <h4>Plan du site</h4><hr>
+            <ul class="sitemap list-group list-unstyled">
+              <li><a href="/">Accueil</a></li>
+              <li><a href="/">L'association</a></li>
+              <li><a href="/">Les clubs</a></li>
+              <li><a href="/">Nos partenaires</a></li>
+              <li><a href="/">Agenda</a></li>
+              <li><a href="/">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>Réseaux sociaux</h4><hr>
+            <p class="social-network">
+              <a href="https://www.facebook.com/bde.c.telecomnancy" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://twitter.com/bdetelecomnancy" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://telecom-nancy.slack.com/" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/bdeceten/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="mailto:bde@telecomnancy.net"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </p>
+          </div>
+          <div class="col-md-2">
+            <h4>Légal</h4><hr>
+            <p>Copyright &copy; 2016<br /> Tous droits réservés
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <?= $this->Html->script('jquery-3.1.0.min.js'); ?>
   <?= $this->Html->script('jquery-ui.min.js'); ?>
   <?= $this->Html->script('bootstrap.min.js'); ?>
+  <?= $this->Html->script('jquery.particleground.min.js'); ?>
+  <?= $this->Html->script('particles.js'); ?>
+  <script>
+  $('#particles').particleground();
+
+  </script>
   <script>
     /* ----- Navbar Affixed ----- */
     $(function() {
