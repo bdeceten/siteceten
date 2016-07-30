@@ -70,58 +70,19 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         </div> <!-- row -->
       </div>
     </div>
-    <div id="start">
-      <div id="nav-wrapper">
-        <nav id="nav" class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button
-                type="button"
-                class="navbar-toggle collapsed"
-                data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1"
-                aria-expanded="false"
-              >
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">
-                <?= $this->Html->image('logo-purple.svg', ['class' => 'pull-left', 'width'=>'20px']) ?>
-                <span class="pull-right">&nbsp;CETEN</span>
-              </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li><a href="#">L'association</a></li>
-                <li><a href="#">Les clubs</a></li>
-                <li><a href="#">Nos partenaires</a></li>
-                <li><a href="#">Agenda</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Se connecter</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-      </div>
-    </div>
+    <?= $this->element('navbar'); ?>
     <div class="container">
         <div class="col-md-8 col-md-offset-2 text-justify">
-        <?= $this->Html->image('newCeten.png', ['class' => 'assos-logo']) ?>
             <h2>L'association</h2>
+            <?= $this->Html->image('newCeten.png', ['class' => 'assos-logo']) ?>
+
               <p>
                 Créé en 1991, le Cercle des Elèves de TELECOM Nancy (précédemment CDE Esial) a pour objectif d'encadrer
                 la vie extra-scolaire à <a href="http://telecomnancy.univ-lorraine.fr/">TELECOM Nancy</a>. Comptant plus de 300 adhérants en 2016, une poignée d'étudiants
                 est élu chaque année civile pour les représenter. Ces derniers constituent le Bureau des Elèves.<br />
                 Parmis les différentes actions du Cercle, on retrouve :
                 <ul>
-                  <li>Proposer des services et activités à l'ensemble de ses adhérents</li>
+                  <li>Proposer des services et activités à l'ensemble des adhérents</li>
                   <li>Favoriser l'entraide et la solidarité entre ses membres</li>
                   <li>Représenter l'école lors des différents événements étudiants de Nancy</li>
                 </ul>
@@ -152,78 +113,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
               </p>
         </div>
     </div>
-    <footer class="footer">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-2 col-md-offset-3">
-            <h4>Plan du site</h4><hr>
-            <ul class="sitemap list-group list-unstyled">
-              <li><a href="/">Accueil</a></li>
-              <li><a href="/">L'association</a></li>
-              <li><a href="/">Les clubs</a></li>
-              <li><a href="/">Nos partenaires</a></li>
-              <li><a href="/">Agenda</a></li>
-              <li><a href="/">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <h4>Réseaux sociaux</h4><hr>
-            <p class="social-network">
-              <a href="https://www.facebook.com/bde.c.telecomnancy" target="_blank">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://twitter.com/bdetelecomnancy" target="_blank">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://telecom-nancy.slack.com/" target="_blank">
-                <i class="fa fa-slack" aria-hidden="true"></i>
-              </a>&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://github.com/bdeceten/" target="_blank">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </a>&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="mailto:bde@telecomnancy.net">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-              </a>
-            </p>
-          </div>
-          <div class="col-md-2">
-            <h4>Légal</h4><hr>
-            <p>Copyright &copy; 2016<br /> Tous droits réservés
-          </div>
-        </div>
-      </div>
-    </footer>
+    <?= $this->element('footer'); ?>
   </body>
-
-  <?= $this->Html->script('jquery-3.1.0.min.js'); ?>
-  <?= $this->Html->script('jquery-ui.min.js'); ?>
-  <?= $this->Html->script('bootstrap.min.js'); ?>
-
-  <script>
-    /* ----- Navbar Affixed ----- */
-    $(function() {
-      $('#nav-wrapper').height($("#nav").height());
-
-      $('#nav').affix({
-          offset: { top: $('#nav').offset().top }
-      });
-  });
-  </script>
-  <script>
-    /* ----- Smooth Scroll ----- */
-    $(function() {
-      $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: target.offset().top
-            }, 1000, 'easeInOutCubic');
-            return false;
-          }
-        }
-      });
-    });
-  </script>
+  <?= $this->element('scripts'); ?>
 </html>
