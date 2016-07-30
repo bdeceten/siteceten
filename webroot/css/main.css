@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto:400,700';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
 
 #nav {
   background-color: white;
@@ -22,6 +22,7 @@
 
 .landing-screen {
   width: 100%;
+  font-family: 'Roboto', sans-serif;
   height: -moz-calc(100vh - 50px);
   height: -webkit-calc(100vh - 50px);
   height: calc(100vh - 50px);
@@ -40,9 +41,13 @@
   background-image: radial-gradient(ellipse farthest-corner at center, #9A4D94 0%, #6a1361 100%);
 }
 
+.logo {
+  margin-top: 5%;
+  height: 30vh;
+}
+
 .brand-middle {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
   margin-top: 40vh; /* poussé de la moitié de hauteur de viewport */
   transform: translateY(-50%);
 }
@@ -83,4 +88,8 @@
 .btn-style:hover {
 	background: #fff;
 	color: #444;
+}
+
+.social-network a {
+  color: white;
 }

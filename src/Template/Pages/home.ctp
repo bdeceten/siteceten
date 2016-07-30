@@ -37,6 +37,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
       </title>
       <?= $this->Html->meta('icon') ?>
       <?= $this->Html->css('bootstrap.min.css') ?>
+      <?= $this->Html->css('font-awesome.min.css') ?>
       <?= $this->Html->css('main.css') ?>
       <?= $this->Html->css('navbar.css') ?>
   </head>
@@ -45,9 +46,16 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
       <div class="container">
         <div class="row">
           <div class="brand-middle">
-              <?= $this->Html->image('logo-white.png', ['width'=>'300px']) ?>
+              <?= $this->Html->image('logo-white.png', ['class'=>'logo']) ?>
               <h1> Cercle des Elèves de TELECOM Nancy </h1>
               <p> <a href="#start"><button class="btn-style">Découvrir</button></a> </p>
+                  <p class="social-network">
+                    <a href="https://www.facebook.com/bde.c.telecomnancy" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://twitter.com/bdetelecomnancy" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://telecom-nancy.slack.com/" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://github.com/bdeceten/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="mailto:bde@telecomnancy.net"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                  </p>
           </div>
         </div> <!-- row -->
       </div>
@@ -64,7 +72,10 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">CETEN</a>
+              <a class="navbar-brand" href="#">
+                <?= $this->Html->image('logo-purple.svg', ['class' => 'pull-left', 'width'=>'20px']) ?>
+                <span class="pull-right">&nbsp;CETEN</span>
+              </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
