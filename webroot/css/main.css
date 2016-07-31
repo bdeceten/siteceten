@@ -4,6 +4,10 @@ a, a:hover {
   color: #5f2359;
 }
 
+.top-space {
+  margin-top: 50px;
+}
+
 .divide {
     border: 0;
     height: 1px;
@@ -109,10 +113,4 @@ a, a:hover {
 
 .sitemap a {
   color: #ccc;
-}
-
-/* ----- Agenda ----- */
-
-.agenda {
-  margin-top: 10vh;
 }

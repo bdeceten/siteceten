@@ -71,7 +71,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
       </div>
     </div>
     <?= $this->element('navbar'); ?>
-    <div class="container">
+    <div class="container top-space">
         <div class="col-md-8 col-md-offset-2 text-justify">
             <?= $this->Html->image('newCeten.png', ['class' => 'assos-logo']) ?>
               <h2>L'association</h2>
