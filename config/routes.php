@@ -48,12 +48,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      * its action called 'display', and we pass a param to select the view file
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
-    $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
-
-    /**
-     * ...and connect the rest of 'Pages' controller's URLs.
-     */
-    $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
+    $routes->connect('/', ['controller' => 'Home', 'action' => 'display', 'home']);
 
     /**
      * Connect catchall routes for all controllers.
@@ -73,6 +68,15 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->fallbacks('DashedRoute');
 });
+
+Router::scope('/agenda', function (RouteBuilder $routes) {
+    /**
+     * Here, we are connecting '/agenda' to a controller called 'Agenda',
+     * its action called 'display', and we pass a param to select the view file
+     * to use (in this case, src/Template/Pages/agenda.ctp)...
+     */
+    $routes->connect('/', ['controller' => 'Agenda', 'action' => 'display', 'home']);
+  });
 
 /**
  * Load all plugin routes.  See the Plugin documentation on
