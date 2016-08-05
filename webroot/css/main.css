@@ -1,7 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto';
 
 a, a:hover {
-  color: #5f2359;
+  color: #820b5f;
 }
 
 .divide {
@@ -20,17 +20,17 @@ a, a:hover {
   height: calc(100vh - 50px);
   color: white;
   /* IE10+ */
-  background-image: -ms-radial-gradient(center, ellipse farthest-corner, #9A4D94 0%, #6a1361 100%);
+  background-image: -ms-radial-gradient(center, ellipse farthest-corner, #820b5f 0%, #5b0742 100%);
   /* Mozilla Firefox */
-  background-image: -moz-radial-gradient(center, ellipse farthest-corner, #9A4D94 0%, #6a1361 100%);
+  background-image: -moz-radial-gradient(center, ellipse farthest-corner, #820b5f 0%, #5b0742 100%);
   /* Opera */
-  background-image: -o-radial-gradient(center, ellipse farthest-corner, #9A4D94 0%, #6a1361 100%);
+  background-image: -o-radial-gradient(center, ellipse farthest-corner, #820b5f 0%, #5b0742 100%);
   /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, #9A4D94), color-stop(100, #6a1361));
+  background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, #820b5f), color-stop(100, #5b0742));
   /* Webkit (Chrome 11+) */
-  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #9A4D94 0%, #6a1361 100%);
+  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #820b5f 0%, #5b0742 100%);
   /* W3C Markup */
-  background-image: radial-gradient(ellipse farthest-corner at center, #9A4D94 0%, #6a1361 100%);
+  background-image: radial-gradient(ellipse farthest-corner at center, #820b5f 0%, #5b0742 100%);
 }
 
 .logo {
@@ -97,8 +97,8 @@ a, a:hover {
 .footer {
   margin-top: 50px;
   padding-top: 20px;
-  color: #ccc;
-  background-color: #5f2359;
+  color: #eeeeee;
+  background-color: #750955;
   border-style: solid;
   border-color: #999;
   border-left: none;
@@ -108,7 +108,7 @@ a, a:hover {
 }
 
 .sitemap a {
-  color: #ccc;
+  color: #eeeeee;
 }
 
 /* ----- Agenda ----- */
