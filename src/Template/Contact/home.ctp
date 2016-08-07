@@ -49,29 +49,30 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
           <div class="col-md-6">
             <h2 class="text-center">Formulaire de contact</h2>
             <hr class="divide">
-            <form class="form-horizontal">
+
+              <?= $this->Form->create($contact, ['class' => 'form-horizontal']) ?>
               <div class="form-group">
                 <label for="firstName" class="col-sm-3 control-label">Prénom</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="firstName" placeholder="Prénom">
+                  <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Prénom">
                 </div>
               </div>
               <div class="form-group">
                 <label for="lastName" class="col-sm-3 control-label">Nom</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="lastName" placeholder="Nom">
+                  <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Nom">
                 </div>
               </div>
               <div class="form-group">
                 <label for="email" class="col-sm-3 control-label">Adresse email</label>
                 <div class="col-sm-9">
-                  <input type="email" class="form-control" id="email" placeholder="exemple@exemple.fr">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="exemple@exemple.fr">
                 </div>
               </div>
               <div class="form-group">
                 <label for="message" class="col-sm-3 control-label">Message</label>
                 <div class="col-sm-9">
-                  <textarea class="form-control" rows="3" id="message"></textarea>
+                  <textarea class="form-control" rows="3" id="message" name="message"></textarea>
                 </div>
               </div>
               <div class="form-group">
@@ -79,6 +80,8 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                   <button type="submit" class="btn btn-default">Envoyer</button>
                 </div>
               </div>
+              <?= $this->Flash->render('success') ?>
+              <?= $this->Flash->render('error') ?>
             </form>
           </div>
           <div class="col-md-6 text-center">

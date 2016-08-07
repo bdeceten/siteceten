@@ -19,6 +19,8 @@ use Cake\Network\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
 use Cake\Mailer\Email;
 
+use App\Form\ContactForm;
+
 /**
  * Static content controller
  *
@@ -39,6 +41,23 @@ class ContactController extends AppController
     public function display()
     {
         $path = func_get_args();
+
+        $contact = new ContactForm();
+        if ($this->request->is('post')) {
+            if ($contact->execute($this->request->data)) {
+                $this->Flash->success('Votre message a bien été envoyé.',['key' => 'success']);
+                $senderMail = $this->request->data('firstName') . " " . $this->request->data('lastName');
+                $email = new Email('default');
+                $email->from([$this->request->data('email') => $senderMail])
+                    ->to('guillaume.haben@telecomnancy.net') //Set bde@telecomnancy.net in prod
+                    ->emailFormat('html')
+                    ->subject('CETEN - Nouveau Message')
+                    ->send($this->request->data('message') . "<br /><br />" . $this->request->data('firstName') . " " . $this->request->data('lastName'));
+            } else {
+                $this->Flash->error('Un problème est survenu.',['key' => 'error']);
+            }
+        }
+        $this->set('contact', $contact);
 
         try {
             $this->render(implode('/contact', $path));
