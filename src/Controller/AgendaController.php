@@ -25,7 +25,7 @@ use Cake\View\Exception\MissingTemplateException;
  *
  * @link http://book.cakephp.org/3.0/en/controllers/pages-controller.html
  */
-class PagesController extends AppController
+class AgendaController extends AppController
 {
 
     /**
@@ -39,22 +39,8 @@ class PagesController extends AppController
     {
         $path = func_get_args();
 
-        $count = count($path);
-        if (!$count) {
-            return $this->redirect('/');
-        }
-        $page = $subpage = null;
-
-        if (!empty($path[0])) {
-            $page = $path[0];
-        }
-        if (!empty($path[1])) {
-            $subpage = $path[1];
-        }
-        $this->set(compact('page', 'subpage'));
-
         try {
-            $this->render(implode('/', $path));
+            $this->render(implode('/agenda', $path));
         } catch (MissingTemplateException $e) {
             if (Configure::read('debug')) {
                 throw $e;

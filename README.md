@@ -25,6 +25,10 @@ The framework source code can be found here: [cakephp/cakephp](https://github.co
 * 'password' => 'ceten2016ceten'
 * 'database' => 'ceten'
 
+## Install
+
+`php composer.phar install`
+
 ## How to contribute ?
 
 For additional features, add an issue in the github repository (example : "feat/homepage") and create a branch with the same name.
