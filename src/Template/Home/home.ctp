@@ -71,11 +71,10 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
       </div>
     </div>
     <?= $this->element('navbar'); ?>
-    <div class="container">
+    <div class="container top-space">
         <div class="col-md-8 col-md-offset-2 text-justify">
-            <h2>L'association</h2>
             <?= $this->Html->image('newCeten.png', ['class' => 'assos-logo']) ?>
-
+              <h2>L'association</h2>
               <p>
                 Créé en 1991, le Cercle des Elèves de TELECOM Nancy (précédemment CDE Esial) a pour objectif d'encadrer
                 la vie extra-scolaire à <a href="http://telecomnancy.univ-lorraine.fr/">TELECOM Nancy</a>. Comptant plus de 300 adhérants en 2016, une poignée d'étudiants
