@@ -6,7 +6,7 @@
         <ul class="sitemap list-group list-unstyled">
           <li><a href="/">Accueil</a></li>
           <li><a href="/">L'association</a></li>
-          <li><a href="/">Les clubs</a></li>
+          <li><a href="/clubs">Les clubs</a></li>
           <li><a href="/">Nos partenaires</a></li>
           <li><a href="/agenda">Agenda</a></li>
           <li><a href="/contact">Contact</a></li>

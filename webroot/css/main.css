@@ -1,10 +1,15 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=Norican';
 
 a, a:hover {
   color: #820b5f;
 }
 
 .top-space {
+  margin-top: 25px;
+}
+
+.top-space-2x {
   margin-top: 50px;
 }
 
@@ -113,4 +118,58 @@ a, a:hover {
 
 .sitemap a {
   color: #eeeeee;
+}
+
+.clubs .panel-heading {
+  color: white;
+  text-align: center;
+}
+
+.clubs .integration {
+  background-color: #d33f2c;
+}
+
+.clubs .studio {
+  background-color: #4caf50;
+}
+
+.clubs .bar {
+  background-color: #00bcd4;
+}
+
+.clubs .jig {
+  background-color: #e91e63;
+}
+
+.clubs .tektn {
+  background-color: #9e9e9e;
+}
+
+.clubs .madpad {
+  background-color: #ff9800;
+}
+
+.clubs .panel-title {
+  font-family: Norican;
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.clubs .clickable {
+  cursor: pointer;
+}
+
+.clubs .panel-body li {
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+.clubs .overview {
+  height:120px;
+  text-align: center;
+  overflow:auto;
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }

@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="#">L'association</a></li>
-            <li><a href="#">Les clubs</a></li>
+            <li><a href="/clubs">Les clubs</a></li>
             <li><a href="#">Nos partenaires</a></li>
             <li><a href="/agenda">Agenda</a></li>
             <li><a href="/contact">Contact</a></li>

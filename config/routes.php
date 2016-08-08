@@ -69,6 +69,15 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->fallbacks('DashedRoute');
 });
 
+Router::scope('/clubs', function (RouteBuilder $routes) {
+    /**
+     * Here, we are connecting '/agenda' to a controller called 'Agenda',
+     * its action called 'display', and we pass a param to select the view file
+     * to use (in this case, src/Template/Pages/agenda.ctp)...
+     */
+    $routes->connect('/', ['controller' => 'Clubs', 'action' => 'display', 'home']);
+});
+
 Router::scope('/agenda', function (RouteBuilder $routes) {
     /**
      * Here, we are connecting '/agenda' to a controller called 'Agenda',
